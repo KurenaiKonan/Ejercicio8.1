@@ -1,0 +1,13 @@
+f=open('juegos.txt','r')
+datos=f.read()
+f.close()
+print(datos)
+
+f=open('juegos.txt','w')
+lista=[
+    'un juego\n',
+    'dos juegos\n',
+    'tres juegos\n',
+]
+f.writelines(lista)
+f.close()
